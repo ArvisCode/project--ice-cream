@@ -4,6 +4,11 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+body {
+  font-family: 'DM Sans', sans-serif;
+  font-family: 'Titan One', cursive;
+}
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';
