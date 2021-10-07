@@ -1,0 +1,7 @@
+@mixin text($weight: 700, $size: 16px, $height: 28px, $spacing: 0.04em) {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: $weight;
+  font-size: $size;
+  line-height: height/$size;
+  letter-spacing: $spacing;
+}
