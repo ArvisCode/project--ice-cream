@@ -68,7 +68,23 @@ ul {
   padding: 43px 20px;
 }
 
-.city__title,
+.city__title {
+  margin-bottom: 10px;
+  font-size: 12px;
+  line-height: 1.83;
+
+  letter-spacing: 0.04em;
+
+  color: #000000;
+}
+
 .schedule__item {
   margin-bottom: 10px;
+}
+
+.city__title-text {
+  font-size: 12px;
+  line-height: 1.5;
+
+  color: #907e82;
 }
