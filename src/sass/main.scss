@@ -4,6 +4,16 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
+@import './components/body';
+@import './components/variables';
+@import './components/reset';
+@import './components/visually-hidden';
+@import './components/container';
+@import './components/section';
+@import './components/mixins';
+@import './components/title';
+@import './components/label';
+
 @import './layout/header';
 @import './layout/hero';
 @import './layout/products';

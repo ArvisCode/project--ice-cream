@@ -2,15 +2,29 @@
 <section class="section section--hero">
     <div class="container container--hero">
         <div class="hero">
-            <!-- Title and navigation buttons -->
-            <div class="hero__title-wrapper">
-                <h1 class="hero__title">ice cream made with <span class="hero__title--color">passion</span></h1>
-                <ul class="hero__link-wrapper">
-                    <li class="hero__link-item">
-                        <a class="hero__link hero__link--color" href="#">Products</a>
+            <div class="hero__wrapper">
+                <!-- Title and navigation buttons -->
+                <div class="hero__title-wrapper">
+                    <h1 class="hero__title">ice cream made with <span class="hero__title--color">passion</span></h1>
+                    <ul class="hero__link-wrapper">
+                        <li class="hero__link-item">
+                            <a class="hero__link hero__link--color" href="#">Products</a>
+                        </li>
+                        <li class="hero__link-item">
+                            <a class="hero__link hero__link--white" href="#">How it’s made?</a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Number of points of sale -->
+                <ul class="hero__text-wrapper">
+                    <li class="hero__text-item">
+                        <p class="hero__number">16</p>
+                        <p class="hero__text">cafes</p>
                     </li>
-                    <li class="hero__link-item">
-                        <a class="hero__link hero__link--white" href="#">How it’s made?</a>
+                    <li class="hero__text-item">
+                        <p class="hero__number">23</p>
+                        <p class="hero__text">food trucks</p>
                     </li>
                 </ul>
             </div>
@@ -77,18 +91,6 @@
                 >
             </picture>
             
-            <!-- Number of points of sale -->
-            <ul class="hero__text-wrapper">
-                <li class="hero__text-item">
-                    <p class="hero__number">16</p>
-                    <p class="hero__text">cafes</p>
-                </li>
-                <li class="hero__text-item">
-                    <p class="hero__number">23</p>
-                    <p class="hero__text">food trucks</p>
-                </li>
-            </ul>
-            
             <!-- Short description -->
             <div class="hero__about">
                 <p class="hero__description">
@@ -96,9 +98,48 @@
                     et
                 </p>
                 <a class="hero__link-arrow" href="#">
-                    <svg class="hero__link-icon">
-                        <use></use>
-                    </svg>
+                    <picture>
+                        <source
+                            srcset="
+                                ./images/btn-arrow/arrow-right.webp 40w,
+                                ./images/btn-arrow/arrow-right@2x.webp 80w
+                            "
+                            media="(min-width: 1280px)"
+                            type="image/webp"
+                            sizes="(min-width: 1280px) 26px"
+                        >
+                        <source
+                            srcset="
+                                ./images/btn-arrow/arrow-right.png 40w,
+                                ./images/btn-arrow/arrow-right@2x.png 80w
+                            "
+                            media="(min-width: 1280px)"
+                            type="image/png"
+                            sizes="(min-width: 1280px) 26px"
+                        >
+                        <source
+                            srcset="
+                                ./images/btn-arrow/arrow-right.webp 40w,
+                                ./images/btn-arrow/arrow-right@2x.webp 80w
+                            "
+                            media="(max-width: 1279px)"
+                            type="image/webp"
+                            sizes="(max-width: 1279px) 18px"
+                        >
+                        <source
+                            srcset="
+                                ./images/btn-arrow/arrow-right.png 40w,
+                                ./images/btn-arrow/arrow-right@2x.png 80w
+                            "
+                            media="(max-width: 1279px)"
+                            type="image/png"
+                            sizes="(max-width: 1279px) 18px"
+                        >
+                        <img
+                            src="./images/btn-arrow/arrow-right.png"
+                            alt="Button arrow"
+                        >
+                    </picture>
                 </a>
             </div>
             
