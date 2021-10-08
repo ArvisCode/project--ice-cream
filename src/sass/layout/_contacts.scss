@@ -1,0 +1,74 @@
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.container {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+//!---------------
+.item {
+  margin: 25px auto;
+}
+
+.item:nth-child(4) {
+  margin-bottom: 0;
+}
+
+.contacts__city {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.contacts__item {
+  width: 220px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  @media screen and (min-width: 1200px) {
+    width: 330px;
+  }
+}
+
+.contacts__title {
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  background: #f0d1a5;
+  border-radius: 6px;
+}
+
+.contacts__title:nth-child(12) {
+  background: #c2e297;
+}
+
+.container__city {
+  padding: 43px 20px;
+}
+
+.city__title,
+.schedule__item {
+  margin-bottom: 10px;
+}
