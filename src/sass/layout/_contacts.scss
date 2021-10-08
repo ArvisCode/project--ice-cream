@@ -1,0 +1,195 @@
+.section--contacts {
+  background: #fff5f6;
+  padding-top: 120px;
+  padding-bottom: 160px;
+}
+
+.item {
+  padding-top: 25px;
+  padding-bottom: 25px;
+
+  &:nth-child(4) {
+    padding-bottom: 0;
+  }
+}
+
+.city__item {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.contacts__city {
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.contacts__item {
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  @media screen and (min-width: $tablet) and (max-width: 1279px) {
+    flex-basis: calc((100% - 110px) / 3);
+  }
+
+  @media screen and (min-width: $desktop) {
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.container__city {
+  padding: 43px 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 50px 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 55px 44px;
+  }
+}
+
+.contacts__title {
+  display: inline-block;
+  padding: 3px 33px;
+  align-items: center;
+  text-align: center;
+  @include text(500, 12, 22);
+  color: var(--white-text);
+  background: #f0d1a5;
+  border-radius: 6px;
+
+  @media screen and (min-width: $tablet) {
+    @include text(500, 16, 30);
+  }
+}
+
+.contacts__title--color {
+  background: #c2e297;
+}
+
+.city__title {
+  margin-bottom: 10px;
+  @include text(500, 12, 22);
+  color: var(--main-text);
+}
+
+.city__title-text {
+  @include text(500, 12, 18);
+  color: var(--second-text);
+
+  @media screen and (min-width: $tablet) {
+    @include text(500, 16, 29);
+  }
+}
+
+.contacts__schedule {
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.schedule__item {
+  margin-bottom: 10px;
+}
+
+.schedule__day {
+  @include text(500, 12, 22);
+
+  @media screen and (min-width: $tablet) {
+    @include text(500, 14, 26);
+  }
+}
+
+.schedule__time {
+  @include text(500, 12, 22);
+  color: var(--accent-color);
+
+  @media screen and (min-width: $tablet) {
+    @include text(500, 14, 26);
+  }
+}
+
+.city__contacts--list {
+  @include text(500, 12, 18);
+  color: var(--second-text);
+  display: flex;
+}
+
+// Btn
+.contacts__btn {
+  margin-top: 54px;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 85px;
+  }
+
+  @media screen and (max-width: 1279px) {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.btn__location {
+  display: flex;
+  align-content: center;
+  height: 44px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 1279px) {
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.btn__location--color {
+  padding: 0 17px;
+  border: none;
+  color: var(--white-text);
+  background: var(--title-text);
+  border-radius: 22px;
+}
+
+.btn__location--white {
+  padding: 0 17px;
+  border: none;
+  color: var(--title-text);
+  background: var(--white-text);
+  border-radius: 22px;
+}
+
+.btn__icon--color {
+  fill: var(--white-text);
+  margin-left: 13px;
+}
+
+.btn__icon--white {
+  fill: var(--title-text);
+  margin-left: 13px;
+}
