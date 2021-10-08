@@ -1,13 +1,7 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
-<symbol id="icon-btn" viewBox="0 0 32 32">
-<path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4" d="M10.374 3.2l12.88 12.8-12.88 12.8"></path>
-</symbol>
 <symbol id="icon-burger" viewBox="0 0 32 32">
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.4h32M0 16h32M0 25.6h32"></path>
-</symbol>
-<symbol id="icon-close" viewBox="0 0 32 32">
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.52 2l26.96 28M2 29.48l28-26.96"></path>
 </symbol>
 <symbol id="icon-facebook" viewBox="0 0 32 32">
 <path d="M22.143 15.971h-4.033v14.865h-6.112v-14.865h-2.906v-5.222h2.906v-3.382c0-2.417 1.142-6.204 6.167-6.204l4.527 0.019v5.072h-3.284c-0.538 0-1.297 0.272-1.297 1.425v3.073h4.567l-0.534 5.219z"></path>
@@ -23,6 +17,13 @@
 </symbol>
 <symbol id="icon-scope" viewBox="0 0 32 32">
 <path d="M17 6.5c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v8.5h-9.5c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h9.5v9.469c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-9.469h9.469c0.276 0 0.5-0.224 0.5-0.5s-0.224-0.5-0.5-0.5h-9.469v-8.5zM31.562 15h-2.613c-0.488-6.37-5.579-11.461-11.949-11.949v-2.551c0-0.276-0.224-0.5-0.5-0.5s-0.5 0.224-0.5 0.5v2.5c-6.83 0-12.435 5.299-12.949 12h-2.489c-0.276 0-0.5 0.224-0.5 0.5s0.224 0.5 0.5 0.5h2.438c0 7.168 5.832 13 13 13v2.5c0 0.276 0.224 0.5 0.5 0.5s0.5-0.224 0.5-0.5v-2.551c6.701-0.514 12-6.119 12-12.949h2.562c0.276 0 0.5-0.224 0.5-0.5s-0.223-0.5-0.5-0.5zM16 28c-6.617 0-12-5.383-12-12s5.383-12 12-12 12 5.383 12 12-5.383 12-12 12z"></path>
+</symbol>
+<symbol id="icon-btn" viewBox="0 0 32 32">
+<path d="M24.888 17.249l-14.24 14.24c-0.329 0.33-0.769 0.511-1.238 0.511s-0.908-0.181-1.238-0.511l-1.049-1.048c-0.682-0.683-0.682-1.793 0-2.476l11.958-11.958-11.971-11.971c-0.329-0.33-0.511-0.769-0.511-1.238s0.182-0.908 0.511-1.238l1.049-1.048c0.33-0.33 0.769-0.511 1.238-0.511s0.908 0.182 1.238 0.511l14.254 14.253c0.33 0.331 0.512 0.772 0.51 1.242 0.001 0.471-0.18 0.912-0.51 1.243z"></path>
+</symbol>
+<symbol id="icon-close" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2.519 2l26.963 28"></path>
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2" d="M2 29.481l28-26.963"></path>
 </symbol>
 </defs>
 </svg>

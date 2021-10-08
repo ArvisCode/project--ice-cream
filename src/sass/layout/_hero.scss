@@ -7,12 +7,12 @@
   padding: 193px 20px 160px 20px;
   overflow: hidden;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     height: 399px;
     padding: 102px 34px 34px 34px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     height: 665px;
     padding: 171px 0 56px 0;
   }
@@ -23,7 +23,7 @@
   justify-content: space-between;
   margin-bottom: 66px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 112px;
   }
 }
@@ -32,7 +32,7 @@
   position: relative;
   z-index: 3;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-left: 38px;
   }
 }
@@ -41,7 +41,7 @@
   width: 218px;
   margin-bottom: 20px;
 
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 26px;
   line-height: 1.15;
@@ -52,10 +52,10 @@
   &--color {
     font-size: 48px;
     line-height: 0.96;
-    color: #d41443;
+    color: var(--title-text);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 162px;
     font-size: 22px;
     line-height: 1.13;
@@ -63,11 +63,11 @@
     &--color {
       font-size: 34px;
       line-height: 0.91;
-      color: #d41443;
+      color: var(--title-text);
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 277px;
     font-size: 38px;
     line-height: 1.15;
@@ -76,7 +76,7 @@
     &--color {
       font-size: 58px;
       line-height: 0.89;
-      color: #d41443;
+      color: var(--title-text);
     }
   }
 }
@@ -92,7 +92,7 @@
     margin-right: 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 15px;
   }
 }
@@ -109,16 +109,16 @@
   font-size: 8px;
   line-height: 1.25;
 
-  color: #ffffff;
-  background-color: #d41443;
+  color: var(--white-text);
+  background-color: var(--title-text);
   border-radius: 20px;
   border: none;
   cursor: pointer;
   transition: background-color 250ms linear;
 
   &--white {
-    color: #d41443;
-    background-color: #ffffff;
+    color: var(--title-text);
+    background-color: var(--white-text);
   }
 
   &:hover,
@@ -131,7 +131,7 @@
     background-color: #ecebeb;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.28;
     height: 40px;
@@ -152,15 +152,15 @@
     left: -81px;
     z-index: -1;
 
-    content: "";
+    content: '';
     display: block;
     width: 346px;
     height: 344px;
-    background-color: #ffa5ba;
+    background-color: var(--accent-color);
     border-radius: 50%;
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     bottom: 0px;
     left: 378px;
 
@@ -173,7 +173,7 @@
     }
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     bottom: 0;
     left: 517px;
 
@@ -192,7 +192,7 @@
 .hero__text-wrapper {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     position: relative;
     z-index: 1;
     display: inline-flex;
@@ -206,7 +206,7 @@
   flex-direction: column;
   align-items: flex-end;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-bottom: 15px;
     margin-right: 15px;
   }
@@ -215,13 +215,13 @@
 .hero__number {
   position: relative;
   z-index: 0;
-  font-family: "Titan One", cursive;
+  font-family: 'Titan One', cursive;
   font-weight: 400;
   font-size: 28px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: #d41443;
+  color: var(--title-text);
 
   &::before {
     position: absolute;
@@ -229,15 +229,15 @@
     right: -5px;
     z-index: -1;
 
-    content: "";
+    content: '';
     display: block;
     width: 16px;
     height: 16px;
-    background-color: #ffffff;
+    background-color: var(--white-text);
     border-radius: 50%;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 46px;
     line-height: 1.15;
     margin-bottom: 2px;
@@ -255,9 +255,9 @@
   font-weight: 400;
   font-size: 8px;
   line-height: 1.25;
-  color: #ffffff;
+  color: var(--white-text);
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.28;
   }
@@ -268,13 +268,13 @@
 .hero__about {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     width: 114px;
     margin-left: 120px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 200px;
     margin-left: 218px;
   }
@@ -284,10 +284,10 @@
   font-weight: 400;
   font-size: 8px;
   line-height: 1.5;
-  color: #ffffff;
+  color: var(--white-text);
   margin-bottom: 7px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 1.4;
     margin-bottom: 20px;
@@ -301,7 +301,7 @@
   width: 18px;
   height: 18px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     width: 26px;
     height: 26px;
   }
@@ -312,14 +312,14 @@
 .hero__jug {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     position: absolute;
     bottom: 28px;
     left: 34px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     bottom: 45px;
     left: 0;
   }
@@ -328,14 +328,14 @@
 .hero__girl {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: block;
     position: absolute;
     bottom: 0;
     right: 0;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     bottom: 0px;
     right: 12px;
     z-index: 1;

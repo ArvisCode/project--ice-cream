@@ -8,11 +8,11 @@
   width: 100vw;
   padding-top: 6px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 37px 34px 0 34px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     padding: 37px 0 0 0;
   }
 }
@@ -24,17 +24,14 @@
   @media screen and (max-width: 767px) {
     justify-content: space-between;
   }
-
-  @media screen and (min-width: 768px) {
-  }
 }
 
 .navigations__logo {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: auto;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     margin-right: 110px;
   }
 }
@@ -42,7 +39,7 @@
 .navigations__menu {
   display: none;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: flex;
     margin-right: 110px;
   }
@@ -51,27 +48,16 @@
 .navigations__button {
   display: none;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     flex-shrink: 0;
   }
 }
 
-// Site logo
-
-.logo {
-}
-
-.logo__picture {
-}
-
 // Main navigations
-
-.menu {
-}
-
 .menu__item {
   margin-right: 35px;
+  flex-shrink: 0;
 
   &:last-child {
     margin-right: 0;
@@ -83,9 +69,15 @@
   font-size: 16px;
   line-height: 1.31;
   color: #ffffff;
+  transition: color 250ms linear;
 
   &--current {
-    color: #d41443;
+    color: var(--title-text);
+  }
+
+  &:hover,
+  &:focus {
+    color: var(--title-text);
   }
 }
 
@@ -102,7 +94,7 @@
   font-size: 16px;
   line-height: 1.31;
 
-  color: #d41443;
+  color: var(--title-text);
   background-color: #ffffff;
   border: none;
   border-radius: 22px;
@@ -116,10 +108,10 @@
 }
 
 .button-buy__icon {
-  width: 4px;
-  height: 8px;
+  width: 10px;
+  height: 10px;
   margin-left: 15px;
-  fill: #d41443;
+  fill: var(--title-text);
 }
 
 // Mobile menu
@@ -139,7 +131,7 @@
   transform: translateX(0);
   transition: transform 250ms linear;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: 254px;
   }
 }
@@ -155,15 +147,24 @@
 
   width: 20px;
   height: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     right: 34px;
   }
 }
 
 .mobile-menu__icon-close {
-  stroke: black;
-  fill: black;
+  width: 14px;
+  height: 14px;
+  stroke: #ffffff;
+  transition: stroke 250ms linear;
+
+  .mobile-menu__button-close:hover & {
+    stroke: var(--title-text);
+  }
 }
 
 .mobile-menu__button-wrapper {
@@ -175,7 +176,7 @@
   padding: 0 49px;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     padding: 0 43px;
   }
 }
@@ -184,7 +185,7 @@
   width: 4px;
   height: 8px;
   margin-left: 15px;
-  fill: #d41443;
+  fill: var(--title-text);
 }
 
 .mobile-menu__list {
@@ -224,9 +225,16 @@
   font-size: 14px;
   line-height: 1.28;
   color: #ffffff;
+  transition: color 250ms linear;
 
   &--current {
-    color: #d41443;
+    color: var(--title-text);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: var(--title-text);
   }
 }
 
@@ -236,7 +244,7 @@
   width: 20px;
   height: 12px;
 
-  color: #d41443;
+  color: var(--title-text);
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -244,14 +252,14 @@
 
   &:hover,
   &:focus {
-    stroke: #ffffff;
+    stroke: var(--white-text);
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     margin-right: 30px;
   }
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: $desktop) {
     display: none;
   }
 }

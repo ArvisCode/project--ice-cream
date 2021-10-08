@@ -98,9 +98,48 @@
                     et
                 </p>
                 <a class="hero__link-arrow" href="#">
-                    <svg class="hero__link-icon">
-                        <use></use>
-                    </svg>
+                    <picture>
+                        <source
+                            srcset="
+                                ./images/btn-arrow/arrow-right.webp 40w,
+                                ./images/btn-arrow/arrow-right@2x.webp 80w
+                            "
+                            media="(min-width: 1280px)"
+                            type="image/webp"
+                            sizes="(min-width: 1280px) 26px"
+                        >
+                        <source
+                            srcset="
+                                ./images/btn-arrow/arrow-right.png 40w,
+                                ./images/btn-arrow/arrow-right@2x.png 80w
+                            "
+                            media="(min-width: 1280px)"
+                            type="image/png"
+                            sizes="(min-width: 1280px) 26px"
+                        >
+                        <source
+                            srcset="
+                                ./images/btn-arrow/arrow-right.webp 40w,
+                                ./images/btn-arrow/arrow-right@2x.webp 80w
+                            "
+                            media="(max-width: 1279px)"
+                            type="image/webp"
+                            sizes="(max-width: 1279px) 18px"
+                        >
+                        <source
+                            srcset="
+                                ./images/btn-arrow/arrow-right.png 40w,
+                                ./images/btn-arrow/arrow-right@2x.png 80w
+                            "
+                            media="(max-width: 1279px)"
+                            type="image/png"
+                            sizes="(max-width: 1279px) 18px"
+                        >
+                        <img
+                            src="./images/btn-arrow/arrow-right.png"
+                            alt="Button arrow"
+                        >
+                    </picture>
                 </a>
             </div>
             
