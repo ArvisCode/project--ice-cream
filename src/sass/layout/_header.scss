@@ -162,6 +162,8 @@
 }
 
 .mobile-menu__icon-close {
+  stroke: black;
+  fill: black;
 }
 
 .mobile-menu__button-wrapper {
@@ -194,7 +196,7 @@
     position: absolute;
     left: -20px;
 
-    content: "";
+    content: '';
     display: block;
     width: 120%;
     height: 1px;
@@ -206,7 +208,7 @@
     position: absolute;
     left: -20px;
 
-    content: "";
+    content: '';
     display: block;
     width: 120%;
     height: 1px;
@@ -235,14 +237,14 @@
   height: 12px;
 
   color: #d41443;
-  background-color: #ffffff;
+  background-color: transparent;
   border: none;
   cursor: pointer;
   transition: color 250ms linear;
 
   &:hover,
   &:focus {
-    color: #ffffff;
+    stroke: #ffffff;
   }
 
   @media screen and (min-width: 768px) {
@@ -257,5 +259,5 @@
 .mobile-menu__icon-open {
   width: 20px;
   height: 12px;
-  fill: currentColor;
+  stroke: var(--title-text);
 }
