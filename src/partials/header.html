@@ -4,7 +4,26 @@
             <!-- Site logo -->
             <a class="navigations__logo logo" href="./index.html">
                 <picture class="logo__picture">
-                    <img src="" alt="Site logo">
+                    <source
+                        srcset="
+                            ./images/logo/logo.webp 199w,
+                            ./images/logo/logo@2x.webp 398w
+                        "
+                        type="image/webp"
+                        sizes="199px"
+                    >
+                    <source
+                        srcset="
+                            ./images/logo/logo.png 199w,
+                            ./images/logo/logo@2x.png 398w
+                        "
+                        type="image/png"
+                        sizes="199px"
+                    >
+                    <img
+                        src="./images/logo/logo.png"
+                        alt="Site logo"
+                    >
                 </picture>
             </a>
 
@@ -32,7 +51,7 @@
                 <!-- Menu close button -->
                 <button class="mobile-menu__button-close" type="button">
                     <svg class="mobile-menu__icon-close">
-                        <use></use>
+                        <use href="./images/sprite.svg#icon-close"></use>
                     </svg>
                 </button>
 
@@ -41,7 +60,7 @@
                     <button class="mobile-menu__button button-buy" type="button">
                         Buy now
                         <svg class="button-buy__icon">
-                            <use></use>
+                            <use href="./images/sprite.svg#icon-btn"></use>
                         </svg>
                     </button>
                 </div>
@@ -68,7 +87,7 @@
             <!-- Menu open button -->
             <button class="mobile-menu__button-open" type="button">
                 <svg class="mobile-menu__icon-open">
-                    <use></use>
+                    <use href="./images/sprite.svg#icon-burger"></use>
                 </svg>
             </button>
 
@@ -76,7 +95,7 @@
             <button class="navigations__button button-buy" type="button">
                 Buy now
                 <svg class="button-buy__icon">
-                    <use></use>
+                    <use href="./images/sprite.svg#icon-btn"></use>
                 </svg>
             </button>
         </nav>
