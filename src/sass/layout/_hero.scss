@@ -1,0 +1,361 @@
+// Hero
+// Title and navigation buttons
+
+.hero {
+  position: relative;
+  height: 502px;
+  padding: 193px 20px 160px 20px;
+  overflow: hidden;
+
+  @media screen and (min-width: 768px) {
+    height: 399px;
+    padding: 102px 34px 34px 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    height: 665px;
+    padding: 171px 0 56px 0;
+  }
+}
+
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 66px;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 112px;
+  }
+}
+
+.hero__title-wrapper {
+  position: relative;
+  z-index: 3;
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 38px;
+  }
+}
+
+.hero__title {
+  width: 218px;
+  margin-bottom: 20px;
+
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  &--color {
+    font-size: 48px;
+    line-height: 0.96;
+    color: #d41443;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    font-size: 22px;
+    line-height: 1.13;
+
+    &--color {
+      font-size: 34px;
+      line-height: 0.91;
+      color: #d41443;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 277px;
+    font-size: 38px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+
+    &--color {
+      font-size: 58px;
+      line-height: 0.89;
+      color: #d41443;
+    }
+  }
+}
+
+.hero__link-wrapper {
+  display: flex;
+}
+
+.hero__link-item {
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-right: 15px;
+  }
+}
+
+.hero__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 24px;
+  padding: 0 20px;
+
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+
+  color: #ffffff;
+  background-color: #d41443;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 250ms linear;
+
+  &--white {
+    color: #d41443;
+    background-color: #ffffff;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+
+  &--white:hover,
+  &--white:focus {
+    background-color: #ecebeb;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+    height: 40px;
+  }
+}
+
+// Center image, large ice cream
+
+.hero__big-ice {
+  position: absolute;
+  bottom: 0;
+  left: 117px;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    bottom: 75px;
+    left: -81px;
+    z-index: -1;
+
+    content: '';
+    display: block;
+    width: 346px;
+    height: 344px;
+    background-color: #ffa5ba;
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 0px;
+    left: 378px;
+
+    &::before {
+      bottom: 46px;
+      left: -71px;
+
+      width: 324px;
+      height: 322px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 0;
+    left: 517px;
+
+    &::before {
+      bottom: 75px;
+      left: -119px;
+
+      width: 538px;
+      height: 538px;
+    }
+  }
+}
+
+// Number of points of sale
+
+.hero__text-wrapper {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    flex-direction: column;
+  }
+}
+
+.hero__text-item {
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 15px;
+    margin-right: 15px;
+  }
+}
+
+.hero__number {
+  position: relative;
+  z-index: 0;
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+
+  &::before {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    z-index: -1;
+
+    content: '';
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border-radius: 50%;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+    margin-bottom: 2px;
+
+    &::before {
+      top: -7px;
+      right: -13px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
+
+.hero__text {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  color: #ffffff;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.28;
+  }
+}
+
+// Short description
+
+.hero__about {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    width: 114px;
+    margin-left: 120px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    margin-left: 218px;
+  }
+}
+
+.hero__description {
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin-bottom: 7px;
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
+}
+
+.hero__link-arrow {
+}
+
+.hero__link-icon {
+  width: 18px;
+  height: 18px;
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+// Pictures with a girl and a jug of milk
+
+.hero__jug {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 28px;
+    left: 34px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 45px;
+    left: 0;
+  }
+}
+
+.hero__girl {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: 0px;
+    right: 12px;
+    z-index: 1;
+  }
+}
+
+// Backdrop
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 184, 202, 0.5);
+  opacity: 1;
+  transition: opacity 250ms linear;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
