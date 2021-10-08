@@ -88,3 +88,19 @@ ul {
 
   color: #907e82;
 }
+
+// Btn
+.btn__location {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.btn__location--color {
+  color: #ffffff;
+  background: #d41342;
+  border-radius: 22px;
+}
