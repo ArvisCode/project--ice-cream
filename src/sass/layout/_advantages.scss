@@ -1,5 +1,6 @@
 .section--advantages {
   background-color: var(--main-bg);
+  padding: 0;
 }
 .container--advantages {
 }
@@ -10,9 +11,11 @@
   display: flex;
   flex-direction: column;
   margin: -30px;
+  padding-right: 140px;
 
   @media screen and (min-width: $tablet) {
     flex-direction: row;
+    padding-right: 0;
   }
 }
 
@@ -26,10 +29,12 @@
   @extend %title;
   font-size: 36px;
   line-height: calc(41 / 36);
+  padding-bottom: 20px;
 
   @media screen and (min-width: $tablet) {
     font-size: 48px;
     line-height: calc(55 / 48);
+    padding-bottom: 10px;
   }
 
   @media screen and (min-width: $desktop) {
