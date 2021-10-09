@@ -226,18 +226,16 @@
 }
 
 .products__title::after {
-  margin-top: 30px;
   display: block;
-  content: '...';
-  font-size: 30px;
-  letter-spacing: 0.1em;
-  /* display: block;
-  content: "";
+  content: '';
   width: 26px;
   height: 6px;
-  background-image: url(../images/dots.svg);
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../images/products/dots.svg);
   background-size: contain;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .products__text {
@@ -273,7 +271,14 @@
 
   cursor: pointer;
 
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
     background-image: url(../images/btn-arrow/arrow-right@2x.png);
   }
+
+  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  //   background-image: url(../images/btn-arrow/arrow-right@2x.png);
+  // }
 }
