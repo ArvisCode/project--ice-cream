@@ -1,3 +1,94 @@
+.section--about {
+  background: #fff5f6;
+}
+.about__above-title {
+  @extend %label;
+  text-align: center;
 
+  margin-bottom: 15px;
+}
+.about_title {
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--title-text);
 
+  margin-bottom: 26px;
+}
+.about__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
+.about__pre-text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.62;
+  color: #000000;
+
+  margin-bottom: 47px;
+}
+.about__text {
+  @extend .about__pre-text;
+  color: #907e82;
+  @media screen and (max-width: 767px) {
+    background-image: url('../images/about/sectionbg-mob.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url('../images/about/sectionbg-mob@2x.png');
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    background-image: url('../images/about/sectionbg-desk.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/about/sectionbg-desc@2x.png');
+    }
+  }
+}
+.about__button {
+  display: inline-block;
+  margin-bottom: 40px;
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+
+  cursor: pointer;
+}
+.about__link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about__icon {
+  margin-left: 14px;
+  fill: #d41443;
+}
