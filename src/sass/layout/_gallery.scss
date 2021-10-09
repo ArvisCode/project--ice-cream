@@ -1,0 +1,41 @@
+.gallery {
+  padding-top: 97px;
+  background-image: linear-gradient(
+    to bottom,
+    #fff5f6 0,
+    #fff5f6 145px,
+    #ffffff 145px,
+    #ffffff 220px
+  );
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 140px;
+    background-image: linear-gradient(
+      to bottom,
+      #fff5f6 0,
+      #fff5f6 235px,
+      #ffffff 235px,
+      #ffffff 405px
+    );
+  }
+  @media screen and (min-width: $desktop) {
+    padding-top: 140px;
+    background-image: linear-gradient(
+      to bottom,
+      #fff5f6 0,
+      #fff5f6 282px,
+      #ffffff 282px,
+      #ffffff 570px
+    );
+  }
+}
+
+.gallery--container {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery--picture {
+  //  height: 122px;
+  //  object-fit: cover;
+}
