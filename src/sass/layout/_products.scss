@@ -1,4 +1,5 @@
 .section-products {
+  background-color: #ffffff;
   padding-top: 120px;
   padding-bottom: 100px;
 
@@ -13,12 +14,8 @@
 
 .section-products__text {
   margin-bottom: 15px;
-
-  font-family: Titan One;
-  font-size: 18px;
-  line-height: 1.15;
   text-align: center;
-  text-transform: uppercase;
+  @extend %label;
 
   color: var(--accent-color);
 
@@ -32,18 +29,8 @@
 }
 
 .section-product__title {
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.15;
-
   text-align: center;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-
-  color: #d41443;
-
-  /* @extend %title; */
+  @extend %title;
 
   margin-bottom: 145px;
 
@@ -68,10 +55,7 @@
 
 .products__item {
   position: relative;
-  padding: 165px;
-  padding-bottom: 40px;
-  padding-left: 40px;
-  padding-right: 40px;
+  padding: 165px 40px 40px 40px;
 
   text-align: center;
   border-radius: 24px;
@@ -83,18 +67,13 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: calc((100 - 3 * 20px) / 3);
+    width: calc((100% - 3 * 20px) / 3);
     margin: 10px;
-    padding-top: 155px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding: 155px 15px 40px 15px;
   }
 
   @media screen and (min-width: $desktop) {
-    padding-top: 170px;
-    padding-bottom: 50px;
-    padding-left: 44px;
-    padding-right: 44px;
+    padding: 170px 44px 50px 44px;
   }
 }
 
@@ -112,12 +91,10 @@
 
 .products__title {
   margin-bottom: 30px;
-  font-family: Titan One;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
+
+  @include text(400, 20px, 22.9px);
   text-transform: uppercase;
+  font-family: Titan One;
 
   color: var(--white-text);
 
@@ -241,11 +218,7 @@
 .products__text {
   margin-bottom: 30px;
 
-  font-family: DM Sans;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.52;
-  letter-spacing: 0.04em;
+  @include text(700, 14px, 21.28px);
 
   color: var(--white-text);
 
@@ -268,6 +241,7 @@
   background-color: #ffffff;
   background-image: url(../images/btn-arrow/arrow-right.png);
   background-repeat: no-repeat;
+  background-size: contain;
 
   cursor: pointer;
 
@@ -277,8 +251,4 @@
     (min-resolution: 2dppx) {
     background-image: url(../images/btn-arrow/arrow-right@2x.png);
   }
-
-  // @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-  //   background-image: url(../images/btn-arrow/arrow-right@2x.png);
-  // }
 }
