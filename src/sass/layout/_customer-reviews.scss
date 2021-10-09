@@ -1,6 +1,13 @@
 .reviews__item {
   margin-left: 0px auto;
   margin-right: 0px auto;
+  @media screen and (min-width: $tablet) {
+    width: 620px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 925px;
+  }
 }
 
 .reviews__picture {
@@ -8,6 +15,10 @@
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
+}
+.reviews__img {
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .reviews__item {
@@ -18,12 +29,25 @@
   padding: 30px 50px 20px;
   background-color: #fafafa;
   text-align: center;
+  position: relative;
 }
 
 .reviews__text {
+  position: relative;
   font-weight: 500;
   font-size: 12px;
   line-height: 31px;
+
+  @media screen and (min-width: $tablet) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+  }
 
   display: inline;
   background-repeat: no-repeat;
@@ -33,17 +57,36 @@
 }
 
 .reviews__text-box::before {
-  content: '';
-
-  width: 54px;
-  height: 40px;
+  content: url(../images/reviews/quotes.png);
   position: absolute;
+  left: 30px;
+  top: 10px;
 }
 
 .reviews__city-text {
+  margin-top: 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 26px;
 
   text-align: center;
+  @media screen and (min-width: $tablet) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+  }
+}
+
+.reviews__city-text::before {
+  display: block;
+  content: '...';
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  color: #c7133e;
+  margin-bottom: 20px;
 }
