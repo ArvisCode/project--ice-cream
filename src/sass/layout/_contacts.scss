@@ -21,7 +21,6 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     justify-content: center;
-    // margin: -20px;
   }
 }
 
@@ -42,9 +41,9 @@
     }
   }
 
-  @media screen and (min-width: $tablet) and (max-width: 1279px) {
-    flex-basis: calc((100% - 110px) / 3);
-  }
+  // @media screen and (min-width: $tablet) and (max-width: 1279px) {
+  //   flex-basis: calc((100% - 110px) / 3);
+  // }
 
   @media screen and (min-width: $desktop) {
     &:not(:last-child) {
