@@ -7,12 +7,10 @@
 .advantages__title {
 }
 .advantages__list {
-  display: flex;
-  flex-direction: column;
   margin: -30px;
 
   @media screen and (min-width: $tablet) {
-    flex-direction: row;
+    display: flex;
   }
 }
 
