@@ -1,10 +1,8 @@
 .section--contacts {
-  background-image: linear-gradient(to bottom, #ffffff 217px, #fff5f6 217px, #fff5f6 784px);
-  padding-top: 120px;
-  padding-bottom: 160px;
+  background-image: linear-gradient(to bottom, #ffffff 178px, #fff5f6 178px, #fff5f6 784px);
 
   @media screen and (min-width: $tablet) {
-    background-image: linear-gradient(to bottom, #ffffff 203px, #fff5f6 203px, #fff5f6 784px);
+    background-image: linear-gradient(to bottom, #ffffff 197px, #fff5f6 197px, #fff5f6 784px);
   }
 
   @media screen and (min-width: $desktop) {
@@ -24,6 +22,18 @@
       background-size: contain;
       background-position: 0 215px;
     }
+  }
+}
+
+.container--contacts {
+  padding: 86px 50px 113px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 119px 36px 158px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 132px 115px 165px;
   }
 }
 
@@ -79,7 +89,7 @@
 
 .contacts__title {
   display: inline-block;
-  padding: 3px 33px;
+  padding: 0 26px;
   align-items: center;
   text-align: center;
   @include text(500, 12px, 22px);
@@ -94,7 +104,7 @@
 
 .contacts__title--color {
   background: #c2e297;
-  padding: 3px 25px;
+  padding: 0 18px;
 }
 
 .city__title {
@@ -184,7 +194,9 @@
   }
 
   @media screen and (min-width: $tablet) {
-    margin-right: 15px;
+    &:not(:last-child) {
+      margin-right: 15px;
+    }
   }
 }
 
@@ -192,9 +204,16 @@
   align-items: center;
   justify-content: center;
   border: none;
+  cursor: pointer;
   color: var(--white-text);
   background: var(--title-text);
   border-radius: 22px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #d41342;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 192px;
@@ -211,9 +230,16 @@
   align-items: center;
   justify-content: center;
   border: none;
+  cursor: pointer;
   color: var(--title-text);
   background: var(--white-text);
   border-radius: 22px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: #ecebeb;
+  }
 
   @media screen and (min-width: $tablet) {
     width: 181px;
