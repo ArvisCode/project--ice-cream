@@ -15,34 +15,19 @@
 .section-products__text {
   margin-bottom: 15px;
   text-align: center;
-  @extend %label;
-
-  color: var(--accent-color);
-
-  @media screen and (min-width: $tablet) {
-    font-size: 26px;
-  }
-  @media screen and (min-width: $desktop) {
-    font-size: 30px;
-    letter-spacing: 0.04em;
-  }
 }
 
 .section-product__title {
   text-align: center;
-  @extend %title;
 
   margin-bottom: 145px;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 155px;
-    font-size: 48px;
   }
 
   @media screen and (min-width: $desktop) {
     margin-bottom: 270px;
-    font-size: 58px;
-    letter-spacing: 0.06em;
   }
 }
 
