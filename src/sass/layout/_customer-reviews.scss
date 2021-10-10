@@ -1,0 +1,116 @@
+.reviews__item {
+  margin-left: 0px auto;
+  margin-right: 0px auto;
+  @media screen and (min-width: $tablet) {
+    width: 620px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 925px;
+  }
+}
+
+.reviews__picture {
+  display: block;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.reviews__img {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.reviews__text-box {
+  padding: 30px 50px 20px;
+  background-color: #fafafa;
+  text-align: center;
+  position: relative;
+}
+.reviews__gradient {
+  background-size: 100% 32px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #fafafa,
+    #fafafa 20px,
+    #e1e1e1 21px,
+    #e1e1e1 22px
+  );
+}
+
+.reviews__text {
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 30px;
+
+  @media screen and (min-width: $tablet) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+  }
+}
+
+.reviews__text-box::before {
+  content: url(../images/reviews/quotes.png);
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+
+.reviews__city-text {
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 26px;
+
+  text-align: center;
+  @media screen and (min-width: $tablet) {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 37px;
+  }
+}
+
+.reviews__city-text::before {
+  display: block;
+  content: '...';
+  font-size: 50px;
+  letter-spacing: 0.1em;
+  color: #c7133e;
+  margin-bottom: 20px;
+}
+.paginnation {
+  text-align: center;
+  margin-top: 30px;
+}
+input {
+  appearance: none;
+
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+
+  border: 2px solid #d9d9d9;
+  background-color: #d9d9d9;
+  transition: 0.2s all linear;
+  outline: none;
+  margin-right: 5px;
+
+  position: relative;
+  top: 4px;
+}
+
+input:checked {
+  border: 6px solid #d31342;
+}
