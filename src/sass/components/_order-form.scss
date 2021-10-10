@@ -1,0 +1,231 @@
+// Order form
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__title {
+  @include text($weight: 400, $size: 34px, $height: 39px, $spacing: 0.04em);
+  font-family: Titan One;
+  text-align: center;
+  color: var(--title-text);
+  margin-bottom: 26px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 40px;
+    line-height: 1.14;
+    margin-bottom: 50px;
+  }
+}
+
+// Contact details
+
+.order-form__field {
+  margin-bottom: 20px;
+}
+
+.order-form__label {
+  @include text($weight: 500, $size: 12px, $height: 18px, $spacing: 0);
+  display: block;
+  margin-bottom: 10px;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+}
+
+.order-form__input {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+
+  @include text($weight: 500, $size: 12px, $height: 18px, $spacing: 0);
+
+  border: 1px solid transparent;
+  background-color: #fff5f6;
+  color: #d41443;
+
+  &:focus {
+    border: 1px solid #d41443;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+
+  &::placeholder {
+    @include text($weight: 500, $size: 12px, $height: 18px, $spacing: 0);
+    color: rgba(212, 20, 67, 0.4);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.66;
+    }
+  }
+}
+
+// Product selection
+
+.order-form__select-wrapper {
+  margin-bottom: 20px;
+}
+
+.order-form__label {
+}
+
+.order-form__select {
+  width: 100%;
+  padding: 10px 20px;
+  outline: none;
+
+  @include text($weight: 500, $size: 12px, $height: 18px, $spacing: 0);
+
+  border: 1px solid transparent;
+  background-color: #fff5f6;
+  color: #d41443;
+
+  &:focus {
+    border: 1px solid #d41443;
+  }
+}
+
+.order-form__value {
+  width: 100%;
+  padding: 30px;
+}
+
+// A comment
+
+.order-form__comment-wrapper {
+  margin-bottom: 20px;
+}
+
+.order-form__label {
+}
+
+.order-form__comment {
+  width: 100%;
+  height: 100px;
+  padding: 10px 20px;
+  outline: none;
+
+  @include text($weight: 500, $size: 12px, $height: 18px, $spacing: 0);
+
+  resize: none;
+  border: 1px solid transparent;
+  background-color: #fff5f6;
+  color: #d41443;
+
+  &:focus {
+    border: 1px solid #d41443;
+  }
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+
+  &::placeholder {
+    @include text($weight: 500, $size: 12px, $height: 18px, $spacing: 0);
+    color: rgba(212, 20, 67, 0.4);
+
+    @media screen and (min-width: $tablet) {
+      font-size: 14px;
+      line-height: 1.66;
+    }
+  }
+}
+
+// Privacy Policy
+
+.order-form__checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.order-form__checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.order-form__checkbox-icon {
+  width: 16px;
+  height: 15px;
+  margin-right: 15px;
+  flex-shrink: 0;
+
+  border: 2px solid #212121;
+  border-radius: 4px;
+
+  transition: background-color 250ms linear, border-color 250ms linear,
+    background-image 250ms linear;
+
+  .order-form__checkbox:focus + & {
+    border-color: #d41443;
+  }
+
+  .order-form__checkbox:checked + & {
+    border-color: #d41443;
+    background-color: #d41443;
+    background-image: url('../images/form-check.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+  }
+}
+
+.order-form__checkbox-label {
+  @include text($weight: 500, $size: 12px, $height: 18px, $spacing: 0);
+  display: block;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+}
+
+// Send button
+
+.order-form__button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.order-form__button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  padding: 0 35px;
+
+  @include text($weight: 700, $size: 16px, $height: 21px, $spacing: 0);
+
+  border: none;
+  border-radius: 22px;
+  background-color: #d41342;
+  color: var(--white-text);
+  cursor: pointer;
+  transition: background-color 250ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: #c7133e;
+  }
+}
+
+.order-form__icon {
+  width: 8px;
+  height: 16px;
+  fill: currentColor;
+  margin-left: 15px;
+}
