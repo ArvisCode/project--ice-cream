@@ -1,0 +1,59 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button class="modal__close" data-modal-close type="button">
+            <svg class="modal__icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        
+        <form class="order-form" action="#" class="order-from" autocomplete="on">
+            <p class="order-form__title">Make an order?</p>
+            <!-- Contact details -->
+            <label class="order-form__field">
+                <span class="order-form__label">Name</span>
+                <input class="order-form__input" type="text" name="neme" placeholder="Name" required>
+            </label>
+            <label class="order-form__field">
+                <span class="order-form__label">Phone</span>
+                <input class="order-form__input" type="tel" name="phone" placeholder="Phone" required>
+            </label>
+            <label class="order-form__field">
+                <span class="order-form__label">Email</span>
+                <input class="order-form__input" type="email" name="email" placeholder="Email" required>
+            </label>
+            
+            <!-- Product selection -->
+            <label class="order-form__select-wrapper">
+                <span class="order-form__label">Choose product</span>
+                <select class="order-form__select" name="ice-cream">
+                    <option class="order-form__value" value="ice-cream">Ice cream</option>
+                    <option class="order-form__value" value="ice-coffee">Ice coffee</option>
+                    <option class="order-form__value" value="milkshakes">Milkshakes</option>
+                </select>
+            </label>
+            
+            <!-- A comment -->
+            <label class="order-form__comment-wrapper">
+            <span class="order-form__label">Your wish</span>
+                <textarea class="order-form__comment" name="commentary" placeholder="Your wish"></textarea>
+            </label>
+            
+            <!-- Privacy Policy -->
+            <label class="order-form__checkbox-wrapper">
+                <input class="order-form__checkbox" type="checkbox" name="Privacy-policy" required>
+                <span class="order-form__checkbox-icon"></span>
+                <span class="order-form__checkbox-label">I agree to the newsletter and accept</span>
+            </label>
+            
+            <!-- Send button -->
+            <div class="order-form__button-wrapper">
+                <button class="order-form__button" type="submit">
+                    To order
+                    <svg class="order-form__icon">
+                        <use href="./images/sprite.svg#icon-btn"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

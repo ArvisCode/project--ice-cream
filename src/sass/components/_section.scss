@@ -3,3 +3,39 @@
     background-color: var(--second-bg);
   }
 }
+
+.section__pre-title {
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.15;
+  text-transform: uppercase;
+  color: var(--accent-color);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.section__title {
+  font-family: 'Titan One', cursive;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--title-text);
+
+  @media screen and (min-width: $tablet) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 58px;
+    letter-spacing: 0.06em;
+  }
+}
