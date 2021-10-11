@@ -89,7 +89,7 @@
 
 .contacts__title {
   display: inline-block;
-  padding: 0 26px;
+  padding: 0 15px;
   align-items: center;
   text-align: center;
   @include text(500, 12px, 22px);
@@ -104,7 +104,7 @@
 
 .contacts__title--color {
   background: #c2e297;
-  padding: 0 18px;
+  padding: 0 16px;
 }
 
 .city__title {
@@ -157,7 +157,7 @@
   }
 }
 
-// Btn
+//!----------- Btn
 .contacts__btn {
   margin-top: 54px;
 
@@ -212,7 +212,7 @@
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
-    background-color: #d41342;
+    background-color: #c7133e;
   }
 
   @media screen and (min-width: $tablet) {

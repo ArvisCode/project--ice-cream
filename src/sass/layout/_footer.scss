@@ -28,25 +28,12 @@
 .footer-title--small {
   margin-bottom: 19px;
 
-  @include text(400, 18px, 21px);
-  font-family: 'Titan One', cursive;
-
-  text-transform: uppercase;
-  color: var(--accent-color);
-
   @media screen and (max-width: 767px) {
     max-width: 232px;
   }
 
   @media screen and (min-width: $tablet) {
-    @include text(400, 23px, 30px);
-    font-family: 'Titan One', cursive;
     margin-bottom: 16px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    @include text(400, 30px, 34px);
-    font-family: 'Titan One', cursive;
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
@@ -55,24 +42,8 @@
 }
 
 .footer-title--big {
-  @include text(400, 34px, 39px);
-  font-family: 'Titan One', cursive;
-
-  text-transform: uppercase;
-  color: var(--title-text);
-
   @media screen and (max-width: 767px) {
     max-width: 232px;
-  }
-
-  @media screen and (min-width: $tablet) {
-    @include text(400, 48px, 55px);
-    font-family: 'Titan One', cursive;
-  }
-
-  @media screen and (min-width: $desktop) {
-    @include text(400, 59px, 66px);
-    font-family: 'Titan One', cursive;
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
@@ -131,8 +102,6 @@
 .footer-phone {
   display: flex;
   justify-content: right;
-
-  // margin-top: 46px;
 }
 
 .footer-phone--text {
