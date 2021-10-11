@@ -38,6 +38,15 @@
     #e1e1e1 21px,
     #e1e1e1 22px
   );
+  @media screen and (min-width: $tablet) {
+    background-image: repeating-linear-gradient(
+      to bottom,
+      #fafafa,
+      #fafafa 25px,
+      #e1e1e1 26px,
+      #e1e1e1 27px
+    );
+  }
 }
 
 .reviews__text {
