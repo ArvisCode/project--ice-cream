@@ -72,9 +72,6 @@
   margin-bottom: 20px;
 }
 
-.order-form__label {
-}
-
 .order-form__select {
   width: 100%;
   padding: 10px 20px;
@@ -91,6 +88,10 @@
   }
 }
 
+.order-form__select option {
+  @include text($weight: 500, $size: 12px, $height: 18px, $spacing: 0);
+}
+
 .order-form__value {
   width: 100%;
   padding: 30px;
@@ -100,9 +101,6 @@
 
 .order-form__comment-wrapper {
   margin-bottom: 20px;
-}
-
-.order-form__label {
 }
 
 .order-form__comment {
