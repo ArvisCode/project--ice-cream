@@ -29,46 +29,30 @@
     }
   }
 }
-.about__above-title {
-  @extend %label;
+.section__pre-title {
   text-align: center;
   margin-bottom: 15px;
   @media screen and (min-width: $tablet) {
-    font-size: 26px;
     line-height: calc(30 / 26);
     margin-bottom: 16px;
   }
   @media screen and (min-width: $desktop) {
-    font-size: 30px;
     line-height: calc(34 / 30);
-    letter-spacing: 0.04em;
     margin-bottom: 15px;
   }
 }
-.about_title {
-  font-family: 'Titan One', cursive;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 1.15;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  color: var(--title-text);
+.section__title {
   text-align: center;
   @media screen and (min-width: 320px) {
     margin-bottom: 26px;
   }
-
   @media screen and (min-width: $tablet) {
-    font-size: 48px;
     line-height: calc(55 / 48);
-
     margin-bottom: 50px;
   }
 
   @media screen and (min-width: $desktop) {
-    font-size: 58px;
     line-height: calc(66 / 58);
-    letter-spacing: 0.06em;
   }
 }
 .about__wrapper {
@@ -169,23 +153,7 @@
   background: var(--white-text);
   border-radius: 22px;
   border: none;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  &:focus,
-  &:hover {
-    background: #ecebeb;
-    transform: scale(1.1);
-  }
 
-  @media screen and (min-width: $tablet) {
-    margin-bottom: 66px;
-  }
-  @media screen and (min-width: $desktop) {
-    margin-bottom: 146px;
-  }
-}
-.about__link {
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -201,11 +169,27 @@
   color: var(--title-text);
 
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background: #ecebeb;
+    transform: scale(1.1);
+  }
   @media screen and (min-width: $tablet) {
     font-size: 16px;
     line-height: calc(21 / 16);
   }
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 66px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 146px;
+  }
 }
+
 .about__icon {
   margin-left: 14px;
   fill: var(--title-text);
