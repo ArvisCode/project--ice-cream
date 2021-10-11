@@ -19,21 +19,19 @@
   @media screen and (min-width: $desktop) {
     background-image: url('../images/about/sectionbg-desk.png');
     background-repeat: no-repeat;
-    background-position: 0% 80%;
+    background-position: 0% 100%;
     background-size: 100%;
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
       screen and (min-resolution: 2dppx) {
-      background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-        url('../images/about/sectionbg-desc@2x.png');
+      background-image: url('../images/about/sectionbg-desc@2x.png');
     }
   }
 }
 .about__above-title {
   @extend %label;
   text-align: center;
-
   margin-bottom: 15px;
   @media screen and (min-width: $tablet) {
     font-size: 26px;
@@ -56,7 +54,7 @@
   text-transform: uppercase;
   color: var(--title-text);
   text-align: center;
-  @media screen and (min-width: $mobile) {
+  @media screen and (min-width: 320px) {
     margin-bottom: 26px;
   }
 
@@ -71,17 +69,11 @@
     font-size: 58px;
     line-height: calc(66 / 58);
     letter-spacing: 0.06em;
-
-    margin-bottom: 50px;
   }
 }
 .about__wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   @media screen and (min-width: $tablet) {
-    flex-direction: row;
+    display: flex;
     align-items: flex-start;
   }
 }
@@ -97,22 +89,19 @@
   }
 }
 .about__text-container {
-  margin: 0 -20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding: 0 30px;
+  }
   @media screen and (min-width: $tablet) {
     width: 50%;
     margin-left: 17px;
     margin-right: 17px;
   }
   @media screen and (min-width: $desktop) {
-    margin-bottom: 45px;
     min-width: auto;
     margin-left: 74px;
-    margin-right: 100px;
     padding-top: 50px;
+    margin-right: 0;
   }
 }
 
@@ -124,7 +113,6 @@
   line-height: 1.62;
   color: var(--main-text);
 
-  padding: 0 51px;
   margin-bottom: 32px;
 
   @media screen and (min-width: $tablet) {
@@ -134,7 +122,7 @@
     padding-top: 50px;
     padding-left: 0;
     padding-right: 0;
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: $desktop) {
     padding-top: 0;
@@ -165,17 +153,15 @@
     padding-top: 0;
     font-size: 14px;
     line-height: 1.76;
-    margin-bottom: 62px;
+    margin-bottom: 55px;
   }
   @media screen and (min-width: $desktop) {
     line-height: 1.94;
     letter-spacing: 0.04em;
-    margin-bottom: 0;
+    margin-bottom: 45px;
   }
 }
 .about__button {
-  position: relative;
-  left: 25%;
   display: inline-block;
   margin-bottom: 40px;
   width: 176px;
@@ -192,14 +178,9 @@
   }
 
   @media screen and (min-width: $tablet) {
-    position: relative;
-    left: 51%;
     margin-bottom: 66px;
   }
   @media screen and (min-width: $desktop) {
-    position: relative;
-    top: -140px;
-    left: 55%;
     margin-bottom: 146px;
   }
 }
