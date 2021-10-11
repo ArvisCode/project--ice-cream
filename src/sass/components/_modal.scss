@@ -1,0 +1,79 @@
+// Backdrop
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 184, 202, 0.5);
+  opacity: 1;
+  transition: opacity 250ms linear;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+}
+
+// Modal
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 999;
+
+  padding: 40px;
+  background-color: #ffffff;
+  filter: drop-shadow(-8px 0px 20px rgba(0, 0, 0, 0.25));
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms linear;
+  overflow-y: auto;
+
+  @media screen and (max-width: 479px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: $mobile) {
+    width: 400px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    width: 500px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    width: 700px;
+  }
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+}
+
+.modal__close {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal__icon {
+  width: 14px;
+  height: 14px;
+
+  stroke: var(--title-text);
+  transition: stroke 250ms linear;
+
+  .modal__close:hover &,
+  .modal__close:focus & {
+    stroke: #000000;
+  }
+}

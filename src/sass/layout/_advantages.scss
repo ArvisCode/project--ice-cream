@@ -8,18 +8,27 @@
 .advantages__title {
 }
 .advantages__list {
-  margin: -30px;
-  padding-right: 140px;
-
   @media screen and (min-width: $tablet) {
     display: flex;
+    margin: -30px;
   }
 }
 
 .advantages__item {
+  @media screen and (max-width: 767px) {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+  }
   position: relative;
-  margin: 30px;
   padding-top: 70px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 180px;
+  }
+  @media screen and (min-width: $tablet) {
+    margin: 30px;
+  }
 }
 
 .advantages__item-title {
