@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-position: 0% 86%;
     background-size: 100%;
+    padding-bottom: 40px;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background-image: url('../images/about/sectionbg-mob@2x.png');
@@ -176,6 +177,10 @@
   &:hover {
     background: #ecebeb;
     transform: scale(1.1);
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 0;
   }
   @media screen and (min-width: $tablet) {
     font-size: 16px;
