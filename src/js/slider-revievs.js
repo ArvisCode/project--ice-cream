@@ -1,4 +1,4 @@
-    $('.reviews__list').slick({
+    $('.reviews').slick({
       dots: true,
       infinite: true,
       slidesToShow: 1,
