@@ -1,6 +1,5 @@
 .gallery {
   padding-top: 97px;
-  padding-bottom: 80px;
   background-image: linear-gradient(
     to bottom,
     #fff5f6 0,
@@ -8,6 +7,16 @@
     #ffffff 145px,
     #ffffff 220px
   );
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(
+      to bottom,
+      #fff5f6 0,
+      #fff5f6 157px,
+      #ffffff 156px,
+      #ffffff 405px
+    );
+  }
 
   @media screen and (min-width: $tablet) {
     padding-top: 140px;
