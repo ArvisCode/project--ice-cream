@@ -12,8 +12,8 @@
     background-image: linear-gradient(
       to bottom,
       #fff5f6 0,
-      #fff5f6 157px,
-      #ffffff 156px,
+      #fff5f6 162px,
+      #ffffff 163px,
       #ffffff 405px
     );
   }
@@ -23,8 +23,8 @@
     background-image: linear-gradient(
       to bottom,
       #fff5f6 0,
-      #fff5f6 235px,
-      #ffffff 235px,
+      #fff5f6 245px,
+      #ffffff 245px,
       #ffffff 405px
     );
   }
@@ -33,14 +33,15 @@
     background-image: linear-gradient(
       to bottom,
       #fff5f6 0,
-      #fff5f6 282px,
-      #ffffff 282px,
+      #fff5f6 312px,
+      #ffffff 311px,
       #ffffff 570px
     );
   }
 }
 
 .gallery--container {
+  padding: 0;
   display: flex;
   justify-content: center;
 }
