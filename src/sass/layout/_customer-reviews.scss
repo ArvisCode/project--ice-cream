@@ -1,3 +1,13 @@
+.section {
+  &--reviews {
+    padding-top: 80px;
+
+    @media screen and (min-width: $tablet) {
+      padding-top: 120px;
+    }
+  }
+}
+
 .reviews__item {
   margin-left: 0px auto;
   margin-right: 0px auto;
@@ -9,9 +19,7 @@
     width: 925px;
   }
 }
-.reviews__list {
-  padding-top: 120px;
-}
+
 .reviews__picture {
   display: block;
   margin-bottom: 30px;
