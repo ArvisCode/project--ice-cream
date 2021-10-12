@@ -65,12 +65,12 @@
   border-radius: 24px;
 
   @media screen and (max-width: 767px) {
+    margin: 0 auto;
+    max-width: 280px;
+
     &:not(:last-child) {
       margin-bottom: 10px;
     }
-  }
-
-  @media screen and (min-width: $tablet) {
   }
 
   @media screen and (min-width: $tablet) and (max-width: 1279px) {
