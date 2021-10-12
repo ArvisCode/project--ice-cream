@@ -146,15 +146,10 @@
 }
 
 .mobile-menu__icon-open {
-  width: 20px;
-  height: 12px;
+  width: 30px;
+  height: 18px;
   stroke: var(--title-text);
   transition: stroke 250ms linear;
-
-  @media screen and (min-width: $tablet) {
-    width: 30px;
-    height: 18px;
-  }
 
   .mobile-menu__button-open:hover &,
   .mobile-menu__button-open:focus & {
