@@ -201,3 +201,12 @@
   width: 8px;
   height: 8px;
 }
+// modal window
+.read-more-about__text {
+  display: block;
+  @include text($weight: 500, $size: 12px, $height: 18px, $spacing: 0);
+  @media screen and (min-width: $tablet) {
+    font-size: 14px;
+    line-height: 1.66;
+  }
+}

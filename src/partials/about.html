@@ -61,7 +61,7 @@
           maximus. Cras massa nibh, tincidunt.
         </p>
         <p class="about__after-text">Aliquam erat volutpat. Aenean accumsan.</p>
-        <button class="about__button" type="button">
+        <button class="about__button" type="button" data-modal-open-made>
           Read more
           <svg class="about__icon">
             <use href="./images/sprite.svg#icon-btn"></use>
@@ -71,3 +71,62 @@
     </div>
   </div>
 </section>
+<div class="backdrop is-hidden" data-modal-made>
+  <div class="modal">
+    <button class="modal__close" type="button" data-modal-close-made>
+      <svg class="modal__icon">
+        <use href="./images/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <form class="read-more" action="#">
+      <p class="order-form__title">How it’s made?</p>
+      <picture>
+        <source
+          srcset="
+            ./images/about/about-img-desk.webp    236w,
+            ./images/about/about-img-desk@2x.webp 472w
+          "
+          media="(min-width: 1280px)"
+          type="image/webp"
+          sizes="(min-width: 1280px) 200px" />
+        <source
+          srcset="./images/about/about-img-desk.png 236w, ./images/about/about-img-desk@2x.png 472w"
+          media="(min-width: 1280px)"
+          type="image/png"
+          sizes="(min-width: 1280px) 200px" />
+        <source
+          srcset="./images/about/about-img-tab.webp 143w, ./images/about/about-img-tab@2x.webp 286w"
+          media="(min-width: 768px)"
+          type="image/webp"
+          sizes="(min-width: 768px) 123px" />
+        <source
+          srcset="./images/about/about-img-tab.png 143w, ./images/about/about-img-tab@2x.png 286w"
+          media="(min-width: 768px)"
+          type="image/png"
+          sizes="(min-width: 768px) 123px" />
+        <source
+          srcset="./images/about/about-img-mob.webp 171w, ./images/about/about-img-mob@2x.webp 342w"
+          media="(max-width: 767px)"
+          type="image/webp"
+          sizes="(max-width: 767px) 100px" />
+        <source
+          srcset="./images/about/about-img-mob.png 171w, ./images/about/about-img-mob@2x.png 342w"
+          media="(max-width: 767px)"
+          type="image/png"
+          sizes="(max-width: 767px) 100px" />
+        <img src="./images/about/about-img-desk.png" alt="cow with milk"
+      /></picture>
+      <label for="text" class="read-more-about__text"
+        >Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+        in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+        maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.Curabitur
+        lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
+        imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+        maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.Curabitur
+        lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
+        imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+        maximus.
+      </label>
+    </form>
+  </div>
+</div>
