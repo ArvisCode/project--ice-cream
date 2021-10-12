@@ -76,7 +76,7 @@
         </ul>
         
         <div class="contacts__btn">
-            <button class="btn__location btn__location--color" type="button">Our Locations
+            <button class="btn__location btn__location--color" type="button" data-modal-open-contacts>Our Locations
                 <svg class="btn__icon btn__icon--color" width="8" height="16">
                     <use href="./images/sprite.svg#icon-btn"></use>
                 </svg>
@@ -89,3 +89,42 @@
         </div>
     </div>
 </section>
+<div class="backdrop is-hidden" data-modal-contacts>
+    <div class="modal">
+        <button type="button" class="modal__close" data-modal-close-contacts>
+            <svg class="modal__icon">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="contacts-form" action="#">
+            <p class="contacts-form__title order-form__title">Our Locations</p>
+            <div class="contacts-cyti__list">
+                <ul class="contact__list">
+                    <li class="contact__item">
+                        <a class="contact-filter__btn" href="https://goo.gl/maps/F91sVLvEHrW9DTQf8" target="_blank" rel="noopener noreferrer">Chicago</a>
+                    </li>
+                    <li class="contact__item">
+                        <a class="contact-filter__btn" href="https://goo.gl/maps/fdKSke8fuzTVyU9q9" target="_blank" rel="noopener noreferrer">Los Angeles</a>
+                    </li>
+                    <li class="contact__item">
+                        <a class="contact-filter__btn" href="https://g.page/LESIceCreamFactory?share" target="_blank" rel="noopener noreferrer">New York</a>
+                    </li>
+                </ul>
+            </div>
+            <picture class="contacts-form__img">
+                <source srcset="./images/about/about-img-desk.webp 236w, ./images/about/about-img-desk@2x.webp 472w" media="(min-width: 1280px)" type="image/webp" sizes="(min-width: 1280px) 200px" />
+                <source srcset="./images/about/about-img-desk.png 236w, ./images/about/about-img-desk@2x.png 472w"
+                    media="(min-width: 1280px)" type="image/png" sizes="(min-width: 1280px) 200px" />
+                <source srcset="./images/about/about-img-tab.webp 143w, ./images/about/about-img-tab@2x.webp 286w"
+                    media="(min-width: 768px)" type="image/webp" sizes="(min-width: 768px) 123px" />
+                <source srcset="./images/about/about-img-tab.png 143w, ./images/about/about-img-tab@2x.png 286w"
+                    media="(min-width: 768px)" type="image/png" sizes="(min-width: 768px) 123px" />
+                <source srcset="./images/about/about-img-mob.webp 171w, ./images/about/about-img-mob@2x.webp 342w"
+                    media="(max-width: 767px)" type="image/webp" sizes="(max-width: 767px) 100px" />
+                <source srcset="./images/about/about-img-mob.png 171w, ./images/about/about-img-mob@2x.png 342w"
+                    media="(max-width: 767px)" type="image/png" sizes="(max-width: 767px) 100px" />
+                <img src="./images/about/about-img-desk.png" alt="cow with milk" />
+            </picture>
+        </form>
+    </div>
+</div>
